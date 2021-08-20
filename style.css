@@ -1,0 +1,19 @@
+
+/* ======================================================
+                 common style
+========================================================= */
+button{
+    background-color: #fff;
+}
+button:hover {
+    color: #fff;
+    background-color:#242424;
+    transition: all .3s ease;
+}
+
+.border-line{
+    border-bottom: 1px solid #5c5c5c9a
+}
+.border-line-lg {
+    border-bottom: 2px solid #1f1f1fd3
+}
