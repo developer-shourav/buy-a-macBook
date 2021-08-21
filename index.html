@@ -33,23 +33,23 @@
                             <!-- Extra memory adding area -->
                             <div class="memory-wraper mb-5">
                                 <p class="mb-1 fw-bolder">Memory</p>
-                            <button class="py-2 px-3  border-1 rounded my-2 ">8GB unified memory</button>
-                            <button class="py-2 px-3  border-1 rounded">16GB unified memory</button>
+                            <button id="memory-btn-1" class="py-2 px-3  border-1 rounded my-2 ">8GB unified memory</button>
+                            <button id="memory-btn-2" class="py-2 px-3  border-1 rounded">16GB unified memory</button>
                             </div>
 
                             <!-- Extra storage adding area -->
                             <div class=" mb-5">
                                 <p class="mb-1 fw-bolder">Storage</p>
-                            <button class="py-2 px-3  border-1 rounded my-2">256GB SSD storage</button>
-                            <button class="py-2 px-3  border-1 rounded">512GB SSD storage</button>
-                            <button class="py-2 px-3  border-1 rounded">1TB SSD storage</button>
+                            <button id="storage-btn-1" class="py-2 px-3  border-1 rounded my-2">256GB SSD storage</button>
+                            <button id="storage-btn-2" class="py-2 px-3  border-1 rounded">512GB SSD storage</button>
+                            <button id="storage-btn-3" class="py-2 px-3  border-1 rounded">1TB SSD storage</button>
                             </div>
 
                             <!-- Delivery wrapper -->
                             <div class=" mb-5">
                                 <p class="mb-2 fw-bolder">Choose your delivery option</p>
-                            <button class="py-2 px-3  border-1 rounded my-2 ">Friday, Aug 25 FREE Prime Delivery</button>
-                            <button class="py-2 px-2  border-1 rounded">Friday, Aug 21 Delivery charge $20</button>
+                            <button id="delivery-btn-1" class="py-2 px-3  border-1 rounded my-2 ">Friday, Aug 25 FREE Prime Delivery</button>
+                            <button id="delivery-btn-2" class="py-2 px-2  border-1 rounded">Friday, Aug 21 Delivery charge $20</button>
                             </div>
 
                         </section>
@@ -57,33 +57,34 @@
                          <div class="row fs-5 ">
                              <div class="col-8 ">
                                  <div class="fw-bold d-flex justify-content-between border-line py-2  "><div>Best Price</div>
-                                 <div>$1299</div> 
+                                 <div>$<span id="best-price" >1299</span></div> 
                                   
                                 </div>
 
                                 <div class="fw-bold d-flex justify-content-between border-line py-2  "><div>Extra Memory Cost</div>
-                                 <div>$0</div> 
+                                 <div>$<span id="memory-cost">0</span> </div> 
                                   
                                 </div>
 
                                 <div class="fw-bold d-flex justify-content-between border-line py-2  "><div>Extra Storage Cost</div>
-                                 <div>$0</div> 
+                                 <div>$ <span id='storage-cost'>0</span>
+                                 </div> 
                                   
                                 </div>
 
                                 <div class="fw-bold d-flex justify-content-between border-line-lg py-2  "><div>Delivery charge</div>
-                                 <div>$0</div> 
+                                 <div>$<span id="delivery-cost">0</span></div> 
                              </div>
 
                              <div class="fw-bold d-flex justify-content-between border-line pt-2  mb-4 "><div>Total Price</div>
-                                 <div>$1299</div>
+                                 <div>$ <span id="total-price">1299</span> </div>
                                   
                                 </div>
                                 <!-- Pomo code area -->
                                 <div class="">
                                     <p class="">Add Pomo Code</p>
-                                    <input type="text" class="rounded border-1 p-1" name="" id="">
-                                    <button class="btn btn-danger"> Apply</button>
+                                    <input type="text" class="rounded border-1 p-1 " name="" id="input" >
+                                    <button id="apply" class="btn border rounded btn-danger"> Apply</button>
                                 </div>
                          </div>
                     </section>
@@ -93,15 +94,10 @@
 
          </section>
          <!-- ---------------------Total price after useing Pomo code------------ -->
-         <div><p class="fs-1 fw-bold mt-3 text-center">Total: $1299</p></div>
-
-
-
+         <div><p class="fs-1 fw-bold mt-3 text-center">Total: $ <span id="final-price">1299</span></p></div>
 
     </main>
     
-
-
   <script src="js/app.js"></script>  
 </body>
 </html>
