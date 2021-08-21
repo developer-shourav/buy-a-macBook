@@ -124,8 +124,11 @@ document.getElementById('apply').addEventListener('click', function () {
 
 
     const finalPrice = document.getElementById('final-price');
-    if (inputText.toLowerCase() == 'stevekaku') {
+    if (inputText == 'stevekaku') {
         finalPrice.innerText = totalPriceText - (totalPriceText * .2);
+    }
+    else{
+        alert("Please inter the right promo code !!!")
     }
     input.value ="";
 });
